@@ -1,0 +1,8 @@
+<!-- 组件 custom-component.wxml -->
+<custom-component>
+  <view>props: {{myProperty}}</view>
+  <view>model: {{modelValue}}</view>
+  <button bindtap='onMyButtonTap'>Button</button>
+  <view>{{A[0].B}}</view>
+  <button bindtap='_myPrivateMethod'>_myPrivateMethod</button>
+</custom-component>
