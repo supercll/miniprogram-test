@@ -20,7 +20,9 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <my-component age="{{userInfo.age}}" model:model-value="{{modelValue}}"></my-component>
+  <my-component age="{{userInfo.age}}" model:model-value="{{modelValue}}">
+    <view slot="slotTest">插槽demo</view>
+  </my-component>
   bindInput: <input bindinput="bindEvent"/> 
   <view>bind: {{inputValue}}</view>
   modelInput: <input model:value="{{modelValue}}" /> 
